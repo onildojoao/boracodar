@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  background: #292738;
+}
+
+.grid {
+  display: grid;
+}
+
+.box {
+  padding: 1.9rem 1.8rem;
+
+  background: #363447;
+  box-shadow: 0.3rem 0.4rem 2.6rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.6rem;
+
+  color: white;
+  line-height: 160%;
+
+  gap: 3.2rem;
+}
+
+#app {
+  column-gap: 2.2rem;
+  row-gap: 1.9rem;
+
+  width: fit-content;
+  height: fit-content;
+  min-height: 100vh;
+
+  margin: auto;
+  padding: 2.2rem 2.3rem;
+  place-content: center;
+}
+
+.top {
+  font-weight: 600;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.middle {
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+
+.bottom {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: auto;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.bottom .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottom .item span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.bottom .item span {
+  --bg-color: #4a4556;
+}
+
+.bottom .item span:nth-child(1)::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: var(--bg-color);
+  border-radius: 999px;
+}
+.nps {
+  gap: 3.2rem;
+}
+
+.nps .middle {
+  min-height: 19.7rem;
+  place-content: center;
+  justify-items: center;
+}
+
+.nps .bottom {
+  line-height: 160%;
+  gap: 1rem;
+}
+
+svg {
+  --percentage: 0;
+  width: 19.7rem;
+  height: 19.7rem;
+  transform: rotate(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 618;
+  stroke-dashoffset: 618;
+  stroke-width: 35;
+  fill: none;
+}
+
+svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+}
+
+svg circle:nth-child(2) {
+  stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 100);
+  stroke-linecap: round;
+  animation: progress 1s ease-in-out forwards;
+}
+
+.middle .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 3.4rem;
+}
+
+.content p {
+  font-size: 1.6rem;
+}
+
+.weekly-sell {
+  gap: 3.2rem;
+}
+
+.weekly-sell .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.weekly-sell .left {
+  gap: 3.2rem;
+  grid-auto-flow: column;
+}
+
+.weekly-sell .left,
+.weekly-sell .right {
+  flex: 1;
+}
+
+.left .grid {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 160%;
+  gap: 0.8rem;
+}
+
+.left .grid span {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.left .grid span:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.left .most-sell span::before {
+  background: linear-gradient(180deg, #81fbb8 0%, #28c76f 100%);
+}
+.left .less-sell span::before {
+  background: linear-gradient(180deg, #ea5455 0%, #feb692 100%);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.bars {
+  display: flex;
+  gap: calc(3vw + 1rem);
+  position: relative;
+}
+
+.bars::before {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 100%;
+  background: #4a4556;
+  border-radius: 999px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.bar-wrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 15.9rem 1.6rem;
+  gap: 0.5rem;
+  margin-top: auto;
+  z-index: 0;
+}
+
+.bar {
+  width: 1.5rem;
+  height: var(--height);
+
+  background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
+  border-radius: 999px;
+  align-self: flex-end;
+
+  animation: up 1.4s;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 618;
+    stroke-dashoffset: 618;
+  }
+}
+
+@keyframes up {
+  0% {
+    height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #app {
+    grid-template-columns: 29.6rem max-content max-content;
+    grid-template-rows: max-content;
+  }
+
+  .box:nth-child(4) {
+    grid-column: 1/4;
+    /* grid-column-start: 1;
+  grid-column-end: 4; */
+  }
+
+  .weekly-sell .wrapper {
+    flex-direction: row;
+  }
+
+  .weekly-sell .left {
+    grid-auto-flow: initial;
+  }
+
+  .bars {
+    gap: 5rem;
+  }
+}
