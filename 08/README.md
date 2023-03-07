@@ -1,4 +1,4 @@
-<h1 align="center"> Cartão de embarque </h1>
+<h1 align="center"> Dashboard </h1>
 
 <p align="center">
 #boraCodar são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
