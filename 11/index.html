@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tela de Login</title>
+  </head>
+  <body>
+    <main>
+      <div class="bg">
+        <div class="content">
+          <header>
+            <img src="./assets/logo.png" />
+          </header>
+          <div class="top-content">
+            <h1>Acesse a Plataforma</h1>
+            <p>
+              Faça login ou registre-se para começar a construir seus projetos
+              ainda hoje.
+            </p>
+          </div>
+          <form action="">
+            <div class="email-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+            <div class="password-wrapper">
+              <div class="password-label-wrapper">
+                <label for="email">Senha</label>
+                <a href="#">Esqueceu a senha?</a>
+              </div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Digite sua senha"
+              />
+              <img
+                onclick="togglePassword()"
+                class="eye"
+                src="./assets/eye-off.png"
+              />
+              <img
+                onclick="togglePassword()"
+                class="eye hide"
+                src="./assets/eye.png"
+              />
+            </div>
+            <button>Entrar</button>
+          </form>
+          <div class="create-account">
+            <p>Ainda não tem uma conta? <a href="#">Inscreva-se</a></p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/bd-right.png" id="bd-right" />
+    </main>
+    <script>
+      function togglePassword() {
+        document
+          .querySelectorAll(".eye")
+          .forEach((eye) => eye.classList.toggle("hide"))
+
+        const type =
+          password.getAttribute("type") == "password" ? "text" : "password"
+
+        password.setAttribute("type", type)
+      }
+    </script>
+  </body>
+</html>
