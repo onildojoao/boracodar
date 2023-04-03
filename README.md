@@ -82,17 +82,22 @@
             <td>22/02/23</td>
             <td align="center" ><a href="07"><img width="300px" src="07/.github/preview.jpg" /></a></td>
         </tr>
-        <tr>
+<tr>
             <td>08</td>
             <td><a href="07">Dashboard</a></td>
             <td>07/03/23</td>
-            <td align="center" ><a href="07"><img width="300px" src="08/preview.jpg" /></a></td>
+            <td align="center" ><a href="07"><img width="300px" src="08/.github/preview.jpg" /></a></td>
         </tr>
-         <tr>
+<tr>
             <td>09</td>
-            <td><a href="07">Conversor de Moedas</a></td>
-            <td>07/03/23</td>
+            <td><a href="08">Conversor de Moedas</a></td>
+            <td>08/03/23</td>
             <td align="center" ><a href="07"><img width="300px" src="09/preview.jpg" /></a></td>
+        </tr>
+<td>10</td>
+            <td><a href="09">Uma página de clima</a></td>
+            <td>02/04/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="./10/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
