@@ -105,5 +105,17 @@
             <td>02/04/23</td>
             <td align="center" ><a href="07"><img width="300px" src="./11/preview.jpg" /></a></td>
         </tr>
+        </tr>
+        <td>12</td>
+            <td><a href="12">Kanban</a></td>
+            <td>04/04/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="./12/preview.jpg" /></a></td>
+        </tr>
+        </tr>
+        <td>11</td>
+            <td><a href="13">Formulário de Cartão de Crédito</a></td>
+            <td>02/04/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="./13/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
