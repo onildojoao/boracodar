@@ -112,10 +112,16 @@
             <td align="center" ><a href="07"><img width="300px" src="./12/preview.jpg" /></a></td>
         </tr>
         </tr>
-        <td>11</td>
+        <td>13</td>
             <td><a href="13">Formulário de Cartão de Crédito</a></td>
             <td>02/04/23</td>
             <td align="center" ><a href="07"><img width="300px" src="./13/preview.jpg" /></a></td>
+        </tr>
+        </tr>
+        <td>14</td>
+            <td><a href="14">Componente de Upload</a></td>
+            <td>02/04/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="./14/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
