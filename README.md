@@ -120,8 +120,14 @@
         </tr>
         <td>14</td>
             <td><a href="14">Componente de Upload</a></td>
-            <td>02/04/23</td>
+            <td>10/04/23</td>
             <td align="center" ><a href="07"><img width="300px" src="./14/preview.jpg" /></a></td>
+        </tr>
+        </tr>
+        <td>15</td>
+            <td><a href="14">Pricing table</a></td>
+            <td>13/04/23</td>
+            <td align="center" ><a href="07"><img width="300px" src="./15/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
