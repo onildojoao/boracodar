@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body,
+button {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.app {
+  display: flex;
+  gap: 3.2rem;
+  background: #f8fafc;
+
+  height: 100vh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  padding: 4.8rem 3.2rem 3.2rem;
+
+  width: 38.4rem;
+  height: 45.4rem;
+
+  background: #ffffff;
+
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 1rem;
+}
+
+.box h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #7c3aed;
+}
+
+.box .info {
+  margin-top: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box .info p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+
+  color: #1e293b;
+}
+
+.box .info .value {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.7rem;
+
+  color: #1e293b;
+}
+
+.box .info .month {
+  font-weight: 700;
+}
+.box button {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem 2.4rem;
+  gap: 1rem;
+
+  width: 32rem;
+  height: 5.6rem;
+
+  background: #ffffff;
+  border: 0.1rem solid #1e293b;
+  border-radius: 0.4rem;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  color: #1e293b;
+}
+
+.line {
+  margin-bottom: 3.2rem;
+  width: 32rem;
+  border: 1px solid #e2e8f0;
+}
+
+.benefits {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.benefit-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefit-line .left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.benefit-line .left p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.06em;
+
+  color: #475569;
+}
+
+.benefit-line img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.box.middle {
+  background: #0f172a;
+  position: relative;
+}
+
+.box.middle h4 {
+  padding: 0.8rem 1.6rem;
+
+  position: absolute;
+  width: 13.3rem;
+  height: 3.4rem;
+  left: calc(50% - 13.3rem / 2 - 0.5rem);
+  top: -1.8rem;
+
+  background: #fba94c;
+  border-radius: 0.6rem;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #0f172a;
+}
+
+.box.middle .info h2 {
+  color: #f8fafc;
+}
+
+.box.middle .info p,
+.box.middle .info .value,
+.box.middle .info .month {
+  color: #f8fafc;
+}
+
+.box.middle button {
+  color: #ffffff;
+  background: #996dff;
+}
+
+.box.middle .benefit-line .left p {
+  color: #cbd5e1;
+}
+
+@media (width < 1200px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+
+    height: 170vh;
+  }
+}
