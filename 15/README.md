@@ -31,6 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Display flex & grid
 - Responsividade (utilizando medida rem e @media)
+- Animações
 
 ## 🔖 Layout
 
