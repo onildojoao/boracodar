@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  background: #16151e;
+}
+
+.app {
+  margin: 0 auto;
+  height: 100vh;
+  width: 43rem;
+}
+
+.header {
+  padding: 4rem;
+  border: 0.1rem solid #8c8cba55;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.header .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+
+.header h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.3rem;
+
+  color: #e1e1e6;
+}
+
+.top .right {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.header .input-wrapper {
+  position: relative;
+}
+
+.header .input-wrapper img {
+  position: absolute;
+  top: 30%;
+  left: 1.5rem;
+}
+
+.header input {
+  padding: 1.6rem 4rem;
+
+  width: 35rem;
+  height: 4rem;
+
+  background: #24243d;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.header input::placeholder {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  color: #e1e1e6;
+}
+
+.header input:hover {
+  outline: 0.3rem solid #8c8cba55;
+}
+
+.main {
+  display: grid;
+  gap: 3.2rem;
+  position: relative;
+
+  width: 43rem;
+  height: 62.4rem;
+  padding: 4.8rem 4rem;
+  border: 0.1rem solid #8c8cba55;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.scroll {
+  width: 0.8rem;
+  height: 5rem;
+  position: absolute;
+  top: 5rem;
+  right: 4rem;
+
+  background: #282843;
+  border-radius: 99.9rem;
+}
+
+.scroll:hover {
+  outline: 0.1rem solid #8c8cba55;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 31.1rem;
+}
+
+.contact .contact-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 0.8rem;
+}
+
+.contact .contact-letter.a {
+  background: #633bbc;
+}
+.contact .contact-letter.b {
+  background: #07847e;
+}
+.contact .contact-letter.c {
+  background: #9a00b3;
+}
+.contact .contact-letter.d {
+  background: #0088b3;
+}
+
+.contact-letter span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  color: #e1e1e6;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  width: 19.1rem;
+}
+
+.contact-details {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.contact-name {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  color: #e1e1e6;
+}
+
+.contact-number {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  color: #8c8cba;
+}
