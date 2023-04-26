@@ -134,5 +134,11 @@
             <td>19/04/23</td>
             <td align="center" ><a href="16"><img width="300px" src="./16/preview.jpg" /></a></td>
         </tr>
+        </tr>
+        <td>17</td>
+            <td><a href="17">Date Picker</a></td>
+            <td>26/04/23</td>
+            <td align="center" ><a href="16"><img width="300px" src="./17/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
