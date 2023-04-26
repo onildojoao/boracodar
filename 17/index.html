@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Date Picker</title>
+  </head>
+  <body>
+    <div class="app">
+      <main>
+        <div class="modal-year hidden">
+          <button class="close"><i class="ph-light ph-x-circle"></i></button>
+          <div class="year-selecter">
+            <img src="./assets/left.png" alt="" />
+            <span>2023</span>
+            <img src="./assets/right.png" alt="" />
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <th><button>Jan</button></th>
+                <th><button>Fev</button></th>
+                <th><button>Mar</button></th>
+              </tr>
+              <tr>
+                <th>
+                  <button class="selected relative">
+                    Abr
+                    <div class="dot"></div>
+                  </button>
+                </th>
+                <th><button>Mai</button></th>
+                <th><button>Jun</button></th>
+              </tr>
+              <tr>
+                <th><button>Jul</button></th>
+                <th><button>Ago</button></th>
+                <th><button>Set</button></th>
+              </tr>
+              <tr>
+                <th><button>Out</button></th>
+                <th><button>Nov</button></th>
+                <th><button>Dez</button></th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-month">
+          <div class="month-selecter">
+            <img src="./assets/left.png" alt="" />
+            <div class="month-wrapper">
+              <span>Abril 2023</span>
+              <button class="filter">
+                <img src="./assets/down.png" alt="" />
+              </button>
+            </div>
+            <img src="./assets/right.png" alt="" />
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Dom</th>
+                <th>Seg</th>
+                <th>Ter</th>
+                <th>Qua</th>
+                <th>Qui</th>
+                <th>Sex</th>
+                <th>Sáb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button class="disabled">26</button></td>
+                <td><button class="disabled">27</button></td>
+                <td><button class="disabled">28</button></td>
+                <td><button class="disabled">29</button></td>
+                <td><button class="disabled">30</button></td>
+                <td><button class="disabled">31</button></td>
+                <td><button>1</button></td>
+              </tr>
+              <tr>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+              </tr>
+              <tr>
+                <td><button>9</button></td>
+                <td><button>10</button></td>
+                <td><button>11</button></td>
+                <td><button>12</button></td>
+                <td><button>13</button></td>
+                <td><button>14</button></td>
+                <td><button>15</button></td>
+              </tr>
+              <tr>
+                <td><button>16</button></td>
+                <td><button>17</button></td>
+                <td><button>18</button></td>
+                <td><button>19</button></td>
+                <td><button>20</button></td>
+                <td><button>21</button></td>
+                <td><button>22</button></td>
+              </tr>
+              <tr>
+                <td><button>23</button></td>
+                <td><button>24</button></td>
+                <td><button>25</button></td>
+                <td>
+                  <button class="selected range-start relative">
+                    26
+                    <div class="dot"></div>
+                  </button>
+                </td>
+                <td><button class="selected range-middle">27</button></td>
+                <td><button class="selected range-middle">28</button></td>
+                <td><button class="selected range-middle">29</button></td>
+              </tr>
+              <tr>
+                <td><button class="selected range-middle">30</button></td>
+                <td><button class="selected range-middle">1</button></td>
+                <td><button class="selected range-middle">2</button></td>
+                <td><button class="selected range-end">3</button></td>
+                <td><button class="disabled">4</button></td>
+                <td><button class="disabled">5</button></td>
+                <td><button class="disabled">6</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

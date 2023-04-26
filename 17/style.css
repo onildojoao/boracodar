@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  all: unset;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+
+  text-align: center;
+  color: #666666;
+
+  border-radius: 0.8rem;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ece0fd;
+}
+
+img:hover {
+  background: #ece0fd;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.selected {
+  background: #6200ee;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.dot {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 48%;
+  bottom: 10%;
+}
+
+.range-start {
+  border-radius: 0.8rem 0rem 0px 8px;
+}
+.range-middle {
+  border-radius: 0;
+}
+.range-end {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.disabled {
+  color: #66666630;
+}
+
+.hidden {
+  display: none;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-year {
+  width: 34.4rem;
+  height: 32rem;
+  padding: 3.2rem;
+  position: relative;
+
+  background: #ffffff;
+  box-shadow: 0rem 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
+  border-radius: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.year-selecter {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 2.4rem;
+}
+
+.year-selecter img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.year-selecter span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+
+.modal-year .close {
+  display: block;
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  right: 3%;
+  top: 3%;
+}
+
+.modal-year table tr {
+  margin-top: 1.6rem;
+}
+
+.modal-year tr {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.modal-year button {
+  width: 8.2rem;
+  height: 4rem;
+
+  border-radius: 0.8rem;
+}
+
+.modal-month {
+  width: 34.4rem;
+  height: 40.8rem;
+  padding: 3.2rem;
+
+  background: #ffffff;
+  box-shadow: 0rem 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
+  border-radius: 1.6rem;
+}
+
+.month-selecter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.month-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2.4rem;
+}
+
+.month-wrapper span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  color: #333333;
+}
+
+.month-selecter img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.month-wrapper .filter {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.modal-month thead tr th {
+  width: 4rem;
+  height: 3.2rem;
+
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+
+  letter-spacing: 0.08em;
+
+  color: #666666;
+}
+
+.modal-month tbody tr {
+  margin-bottom: 0.8rem;
+}
+
+.modal-month button {
+  width: 4rem;
+  height: 4rem;
+}
