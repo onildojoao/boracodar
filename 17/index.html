@@ -17,8 +17,8 @@
   <body>
     <div class="app">
       <main>
-        <div class="modal-year hidden">
-          <button class="close"><i class="ph-light ph-x-circle"></i></button>
+        <dialog class="modal-year">
+          <!-- <button class="close"><i class="ph-light ph-x-circle"></i></button> -->
           <div class="year-selecter">
             <img src="./assets/left.png" alt="" />
             <span>2023</span>
@@ -27,33 +27,55 @@
           <table>
             <tbody>
               <tr>
-                <th><button>Jan</button></th>
-                <th><button>Fev</button></th>
-                <th><button>Mar</button></th>
+                <th>
+                  <button class="month-btn">Jan</button>
+                </th>
+                <th>
+                  <button class="month-btn">Fev</button>
+                </th>
+                <th>
+                  <button class="month-btn">Mar</button>
+                </th>
               </tr>
               <tr>
                 <th>
-                  <button class="selected relative">
+                  <button class="selected relative month-btn">
                     Abr
                     <div class="dot"></div>
                   </button>
                 </th>
-                <th><button>Mai</button></th>
-                <th><button>Jun</button></th>
+                <th>
+                  <button class="month-btn">Mai</button>
+                </th>
+                <th>
+                  <button class="month-btn">Jun</button>
+                </th>
               </tr>
               <tr>
-                <th><button>Jul</button></th>
-                <th><button>Ago</button></th>
-                <th><button>Set</button></th>
+                <th>
+                  <button class="month-btn">Jul</button>
+                </th>
+                <th>
+                  <button class="month-btn">Ago</button>
+                </th>
+                <th>
+                  <button class="month-btn">Set</button>
+                </th>
               </tr>
               <tr>
-                <th><button>Out</button></th>
-                <th><button>Nov</button></th>
-                <th><button>Dez</button></th>
+                <th>
+                  <button class="month-btn">Out</button>
+                </th>
+                <th>
+                  <button class="month-btn">Nov</button>
+                </th>
+                <th>
+                  <button class="month-btn">Dez</button>
+                </th>
               </tr>
             </tbody>
           </table>
-        </div>
+        </dialog>
 
         <div class="modal-month">
           <div class="month-selecter">

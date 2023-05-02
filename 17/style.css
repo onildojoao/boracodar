@@ -91,6 +91,10 @@ main {
 }
 
 .modal-year {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   width: 34.4rem;
   height: 32rem;
   padding: 3.2rem;
@@ -98,8 +102,10 @@ main {
 
   background: #ffffff;
   box-shadow: 0rem 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
+  border: none;
   border-radius: 1.6rem;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .year-selecter {
