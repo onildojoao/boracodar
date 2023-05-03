@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.app {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background: #1e1e1e;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 348px;
+  height: 486.4px;
+  left: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #121214;
+  background: linear-gradient(0deg, rgba(0, 1, 14, 0.5), rgba(0, 1, 14, 0.5)),
+    linear-gradient(
+      148.95deg,
+      rgba(14, 23, 101, 0.85) -7.05%,
+      rgba(42, 17, 92, 0.85) 110.07%
+    );
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.card img {
+  opacity: 0.1;
+  border-radius: 16px;
+}
+
+.card span {
+  position: absolute;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #312d74;
+  -webkit-text-stroke-width: 0.2rem;
+  opacity: 0.9;
+  /* color: #312d74; */
+  /* border: 1px solid #312d74; */
+}
+
+#card1 {
+  position: absolute;
+  left: 28%;
+}
+
+#card2 {
+  position: absolute;
+  left: 55%;
+}
+
+.main-card {
+  position: relative;
+  width: 436px;
+  height: 608px;
+  padding: 4.8rem 4rem;
+  background: #121214;
+  background: linear-gradient(
+    90.24deg,
+    rgba(14, 23, 101, 0.85) 0%,
+    rgba(53, 14, 88, 0.85) 98.1%
+  );
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.main-card:hover,
+.card:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+.main-card #battle {
+  position: absolute;
+  top: 0%;
+
+  opacity: 0.1;
+}
+
+.main-card img {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+}
+
+.top-content {
+  width: 263px;
+  height: 110px;
+  display: grid;
+  gap: 1.6rem;
+  margin-bottom: 6rem;
+}
+
+.top-content h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ece4ef;
+
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.top-content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #d8cede;
+}
+
+.info {
+  width: 198px;
+  height: 308px;
+
+  display: grid;
+  gap: 1.6rem;
+}
+
+.content h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #9c83a7;
+}
+
+.content p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+
+  color: #d8cede;
+}
