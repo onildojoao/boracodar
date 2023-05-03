@@ -43,13 +43,6 @@ img:hover {
   position: relative;
 }
 
-.selected {
-  background: #6200ee;
-  font-weight: 700;
-
-  color: #ffffff;
-}
-
 .dot {
   content: "";
   width: 0.5rem;
@@ -82,12 +75,12 @@ img:hover {
 .app {
   position: relative;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .modal-year {
@@ -95,7 +88,7 @@ main {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 34.4rem;
+  width: fit-content;
   height: 32rem;
   padding: 3.2rem;
   position: relative;
@@ -127,35 +120,51 @@ main {
   color: #333333;
 }
 
-.modal-year .close {
-  display: block;
-  position: absolute;
-  width: 2.4rem;
-  height: 2.4rem;
-  right: 3%;
-  top: 3%;
-}
-
-.modal-year table tr {
-  margin-top: 1.6rem;
-}
-
-.modal-year tr {
-  display: flex;
+.modal-year main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.6rem;
 }
 
-.modal-year button {
+.modal-year main > div {
   width: 8.2rem;
   height: 4rem;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #666666;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.modal-year main > div:hover {
+  background-color: #ece0fd;
   border-radius: 0.8rem;
+}
+
+.modal-year main > div.selected {
+  background: #6200ee;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  color: #ffffff;
+}
+
+.modal-year main > div.selected::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  bottom: 15%;
 }
 
 .modal-month {
   width: 34.4rem;
   height: 40.8rem;
-  padding: 3.2rem;
+  padding: 3.2rem 1.2rem;
 
   background: #ffffff;
   box-shadow: 0rem 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
@@ -193,25 +202,68 @@ main {
   height: 2.4rem;
 }
 
-.modal-month thead tr th {
-  width: 4rem;
-  height: 3.2rem;
+.modal-month header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 0.5rem;
+}
 
-  font-weight: 400;
+.modal-month header > div {
+  width: 3rem;
+  height: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: stretch;
   font-size: 1.2rem;
-  line-height: 1.6rem;
-  text-align: center;
 
-  letter-spacing: 0.08em;
+  color: #bbbbbb;
+}
+
+.modal-month main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.8rem;
+  justify-items: center;
+}
+
+.modal-month main > div {
+  width: 3rem;
+  height: 3.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   color: #666666;
+  cursor: pointer;
+  transition: all 300ms;
 }
 
-.modal-month tbody tr {
-  margin-bottom: 0.8rem;
+.modal-month main > div:hover {
+  width: 3rem;
+  height: 3.8rem;
+  background-color: #ece0fd;
+  border-radius: 0.8rem;
 }
 
-.modal-month button {
-  width: 4rem;
-  height: 4rem;
+.modal-month main > div.selected {
+  width: 3rem;
+  height: 3.8rem;
+  background: #6200ee;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  color: #ffffff;
+}
+
+.modal-month main > div.selected::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  bottom: 5%;
 }
