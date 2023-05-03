@@ -138,7 +138,12 @@
         <td>17</td>
             <td><a href="17">Date Picker</a></td>
             <td>26/04/23</td>
-            <td align="center" ><a href="16"><img width="300px" src="./17/preview.jpg" /></a></td>
+            <td align="center" ><a href="17"><img width="300px" src="./17/preview.jpg" /></a></td>
+        </tr>
+        <td>18</td>
+            <td><a href="18">Card de Personagem</a></td>
+            <td>03/05/23</td>
+            <td align="center" ><a href="18"><img width="300px" src="./18/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
