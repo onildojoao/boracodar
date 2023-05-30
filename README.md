@@ -146,9 +146,15 @@
             <td align="center" ><a href="19"><img width="300px" src="./19/preview.jpg" /></a></td>
         </tr>
                 <td>20</td>
-            <td><a href="19">Galeria com Hover</a></td>
+            <td><a href="20">Galeria com Hover</a></td>
             <td>24/05/23</td>
             <td align="center" ><a href="20"><img width="300px" src="./20/preview.jpg" /></a></td>
+        </tr>
+        </tr>
+                <td>21</td>
+            <td><a href="21">Carrinho de Compras</a></td>
+            <td>30/05/23</td>
+            <td align="center" ><a href="20"><img width="300px" src="./21/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
