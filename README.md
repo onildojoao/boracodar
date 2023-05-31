@@ -156,5 +156,11 @@
             <td>30/05/23</td>
             <td align="center" ><a href="20"><img width="300px" src="./21/preview.jpg" /></a></td>
         </tr>
+        </tr>
+                <td>22</td>
+            <td><a href="22">Profile Settings</a></td>
+            <td>31/05/23</td>
+            <td align="center" ><a href="20"><img width="300px" src="./22/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
