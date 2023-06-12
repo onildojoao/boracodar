@@ -26,7 +26,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
 - Figma
-- Phosphor Icons
 
 ## 🚀 Aspectos de CSS
 
