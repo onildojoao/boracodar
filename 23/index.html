@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário Multi Step</title>
+  </head>
+  <body>
+    <form action="">
+      <header class="flex">
+        <div class="h-wrapper flex">
+          <img src="./assets/Done.png" alt="" />
+          <p>Contato</p>
+        </div>
+        <img src="./assets/Arrow.png" alt="" />
+        <div class="h-wrapper flex">
+          <img src="./assets/Current.png" alt="" />
+          <p>Empresa</p>
+        </div>
+        <img src="./assets/Arrow.png" alt="" />
+        <div class="h-wrapper flex">
+          <img src="./assets/Next.png" alt="" />
+          <p>Projeto</p>
+        </div>
+      </header>
+      <div class="line"></div>
+      <main class="grid">
+        <div class="wrapper grid">
+          <p>Nome da empresa</p>
+          <label class="sr-only" for="e-name"> Qual é o nome da empresa </label>
+          <input
+            name="e-name"
+            type="text"
+            placeholder="Qual é o nome da empresa"
+          />
+        </div>
+        <div class="wrapper grid">
+          <p>Número de funcionários</p>
+          <label class="sr-only" for="e-number">
+            Digite o número de colaboradores
+          </label>
+
+          <input
+            id="number"
+            name="e-number"
+            type="number"
+            placeholder="Digite o número de colaboradores"
+          />
+        </div>
+        <div class="wrapper grid">
+          <p>Sobre seu negócio</p>
+          <label class="sr-only" for="e-info">
+            Fale um pouco sobre seus produtos ou serviços
+          </label>
+          <input
+            id="textarea"
+            rows="10"
+            cols="30"
+            name="e-info"
+            type="textarea"
+            placeholder="Fale um pouco sobre seus produtos ou serviços"
+          />
+        </div>
+        <div class="button-wrapper flex">
+          <button class="back">VOLTAR</button>
+          <button class="continue">CONTINUAR</button>
+        </div>
+      </main>
+    </form>
+  </body>
+</html>
