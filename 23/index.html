@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Titillium+Web:wght@700&tdisplay=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário Multi Step</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <header class="flex">
+          <div class="h-wrapper flex">
+            <strong class="active" data-step>Contato</strong>
+          </div>
+          <img src="./assets/Arrow.png" alt="" />
+          <div class="h-wrapper flex">
+            <strong data-step>Empresa</strong>
+          </div>
+          <img src="./assets/Arrow.png" alt="" />
+          <div class="h-wrapper flex">
+            <strong data-step>Projeto</strong>
+          </div>
+        </header>
+        <div class="line"></div>
+
+        <div class="first form-step active">
+          <div class="wrapper grid">
+            <p>Nome</p>
+            <label class="sr-only" for="p-name">
+              Como prefere ser chamado
+            </label>
+            <input
+              required
+              name="p-name"
+              type="text"
+              placeholder="Como prefere ser chamado"
+            />
+          </div>
+          <div class="wrapper grid">
+            <p>Telefone</p>
+            <label class="sr-only" for="p-phone">
+              Digite seu número de WhatsApp
+            </label>
+            <input
+              id="number"
+              name="p-phone"
+              type="text"
+              placeholder="Digite seu número de WhatsApp"
+            />
+          </div>
+          <div class="wrapper grid">
+            <p>E-mail</p>
+            <label class="sr-only" for="p-email"> Digite seu e-mail </label>
+            <input
+              required
+              name="p-email"
+              type="email"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          <div class="button-wrapper flex">
+            <button type="button" class="continue" data-action="next">
+              CONTINUAR
+            </button>
+          </div>
+        </div>
+
+        <div class="second form-step hidden">
+          <div class="wrapper grid">
+            <p>Nome da empresa</p>
+            <label class="sr-only" for="e-name">
+              Qual é o nome da empresa
+            </label>
+            <input
+              name="e-name"
+              type="text"
+              placeholder="Qual é o nome da empresa"
+            />
+          </div>
+          <div class="wrapper grid">
+            <p>Número de funcionários</p>
+            <label class="sr-only" for="e-number">
+              Digite o número de colaboradores
+            </label>
+
+            <input
+              id="number"
+              name="e-number"
+              type="number"
+              placeholder="Digite o número de colaboradores"
+            />
+          </div>
+          <div class="wrapper grid">
+            <p>Sobre seu negócio</p>
+            <label class="sr-only" for="e-info">
+              Fale um pouco sobre seus produtos ou serviços
+            </label>
+            <input
+              id="textarea"
+              rows="10"
+              cols="30"
+              name="e-info"
+              type="textarea"
+              placeholder="Fale um pouco sobre seus produtos ou serviços"
+            />
+          </div>
+          <div class="button-wrapper flex">
+            <button type="button" class="back" data-action="prev">
+              VOLTAR
+            </button>
+            <button type="button" class="continue" data-action="next">
+              CONTINUAR
+            </button>
+          </div>
+        </div>
+
+        <div class="third form-step hidden">
+          <div class="wrapper grid">
+            <p>Objetivos do projeto</p>
+            <label class="sr-only" for="e-project">
+              Descreva quais os objetivos desse projeto
+            </label>
+            <input
+              id="textarea"
+              rows="10"
+              cols="30"
+              name="e-project"
+              type="textarea"
+              placeholder="Descreva quais os objetivos desse projeto"
+            />
+          </div>
+          <div class="button-wrapper flex">
+            <button type="button" class="back" data-action="prev">
+              VOLTAR
+            </button>
+            <button type="submit" class="continue" data-action="finish">
+              ENVIAR RESPOSTA
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
