@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&tdisplay=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Ajuste de Iluminação</title>
+  </head>
+  <body>
+    <main>
+      <div class="preview"></div>
+
+      <h3>Ajustes de Iluminação</h3>
+
+      <h4>Configuração Atual</h4>
+      <div class="current-hue-specs">
+        <span id="text-hue">HSL:</span>
+        <span id="text-brightness">Brilho:</span>
+        <span id="text-contrast">Contraste:</span>
+        <span id="text-shadow">Sombra</span>
+      </div>
+
+      <div class="slider-controls">
+        <div class="hue flex">
+          <i class="ph-thin ph-palette"></i>
+          <div>
+            <input
+              type="range"
+              id="hue-slider"
+              min="0"
+              max="360"
+              step="1"
+              value="0"
+            />
+          </div>
+        </div>
+
+        <div class="brightness flex">
+          <i class="ph-thin ph-sun"></i>
+          <div>
+            <input
+              type="range"
+              id="brightness-slider"
+              min="0"
+              max="100"
+              step="1"
+              value="100"
+            />
+          </div>
+        </div>
+
+        <div class="contrast flex">
+          <i class="ph ph-circle-half"></i>
+          <div>
+            <input
+              type="range"
+              id="contrast-slider"
+              min="0"
+              max="100"
+              step="1"
+              value="100"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
