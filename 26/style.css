@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100%;
+  background: #feece0;
+}
+
+#app {
+  width: 90rem;
+  height: 56.25rem;
+
+  background: #feece0;
+  box-shadow: 0px 8px 8px 0px rgba(255, 255, 255, 0.9);
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+
+  font-family: "Source Serif Pro";
+}
+
+.top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+}
+
+.top-right h2 {
+  color: #58190a;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.top-right p {
+  color: #58190a;
+  font-size: 2.375rem;
+  font-weight: 400;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.controls span {
+  color: #9b6647;
+  font-size: 2.1875rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+ion-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #9b6647;
+  cursor: pointer;
+}
+
+.actions span {
+  color: #9b6647;
+  font-size: 2.5rem;
+}
+
+.bottom-content {
+  display: flex;
+  width: 90rem;
+  height: 27.4375rem;
+  padding: 4.625rem 3.125rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-shrink: 0;
+
+  background: #9b6647;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 27.0625rem;
+  height: 10.375rem;
+  gap: 2rem;
+
+  color: #fff;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.header-wrapper svg {
+  width: 2.231rem;
+  height: 2rem;
+}
+
+.header-wrapper span {
+  color: #feece0;
+  font-size: 2.375rem;
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+}
+
+ul li,
+ol li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.75rem;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+}

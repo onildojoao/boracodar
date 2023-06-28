@@ -1,4 +1,4 @@
-<h1 align="center"> Ajustes de Iluminação </h1>
+<h1 align="center"> Receita Junina </h1>
 
 <p align="center">
 <a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
@@ -25,7 +25,7 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-- Javascript
+- Javascript 
 - Figma
 
 ## 🚀 Aspectos de CSS
@@ -33,18 +33,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Display flex
 - Responsividade (utilizando medida rem)
 - Posicionamento
-- Ion Icons
-- Akar Icons
+
 
 ## 🚀 JS
 
 - Manipulação da DOM
-- Sobreposição de Elementos
-- Youtube IFrame
+- Alteração dinâmica de porções e ingredientes
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1253345035290143826/). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/MR4Fw2JzPBKjWjpKkqL30m/Receita-Junina-(Community)?node-id=0%3A1&mode=dev>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
