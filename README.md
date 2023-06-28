@@ -175,5 +175,10 @@
             <td>27/06/23</td>
             <td align="center" ><a href="24"><img width="300px" src="./24/preview.jpg" /></a></td>
         </tr>
+<td>25</td>
+            <td><a href="25">Player de VR</a></td>
+            <td>28/06/23</td>
+            <td align="center" ><a href="25"><img width="300px" src="./25/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

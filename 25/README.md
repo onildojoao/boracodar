@@ -32,12 +32,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Display flex
 - Responsividade (utilizando medida rem)
 - Posicionamento
-- Phosphor icons
+- Ion Icons
+- Akar Icons
 
 ## 🚀 JS
 
 - Manipulação da DOM
-- Atualização dinâmica dos elementos
+- Sobreposição de Elementos
+- Youtube IFrame
 
 ## 🔖 Layout
 
