@@ -185,5 +185,11 @@
             <td>28/06/23</td>
             <td align="center" ><a href="26"><img width="300px" src="./26/preview.jpg" /></a></td>
         </tr>
+</tr>
+<td>27</td>
+            <td><a href="27">Receita Junina</a></td>
+            <td>05/07/23</td>
+            <td align="center" ><a href="27"><img width="300px" src="./27/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
