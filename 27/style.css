@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+  place-content: center;
+  font-family: "Outfit";
+  background: url("./assets/Background.png");
+}
+
+main h1 {
+  color: var(--gray-01, #d6d6f2);
+  width: 33rem;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+main p {
+  width: 33rem;
+  color: var(--gray-01, #d6d6f2);
+
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  margin-top: 1.5rem;
+}
+
+.actions-wrapper {
+  margin-top: 3.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.actions-wrapper button {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 62.4375rem;
+  border: none;
+  background: var(--blue, #151557);
+  text-transform: uppercase;
+  color: var(--gray-02, #e2e2f5);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
