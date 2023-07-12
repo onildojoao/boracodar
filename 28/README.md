@@ -1,4 +1,4 @@
-<h1 align="center"> Página 404 </h1>
+<h1 align="center"> Plataforma de IA</h1>
 
 <p align="center">
 <a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
@@ -25,17 +25,18 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
+- Phosphor Icons
 - Figma
 
 ## 🚀 Aspectos de CSS
 
 - Display flex e grid
 - Responsividade (utilizando medida rem)
-- Posicionamento
+- Phosphor Icons 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1258418121860696031). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1260950780300628490). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 

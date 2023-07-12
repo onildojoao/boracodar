@@ -187,9 +187,14 @@
         </tr>
 </tr>
 <td>27</td>
-            <td><a href="27">Receita Junina</a></td>
+            <td><a href="27">Página 404</a></td>
             <td>05/07/23</td>
             <td align="center" ><a href="27"><img width="300px" src="./27/preview.jpg" /></a></td>
+        </tr>
+<td>28</td>
+            <td><a href="28">Plataforma de IA</a></td>
+            <td>05/07/23</td>
+            <td align="center" ><a href="28"><img width="300px" src="./28/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
