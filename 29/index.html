@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Antes e Depois com IA</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="wrapper">
+          <i class="ph ph-arrow-fat-down"></i>
+          <h1>Antes</h1>
+        </div>
+        <div class="wrapper">
+          <h1>Depois</h1>
+          <i class="ph ph-arrow-fat-down"></i>
+        </div>
+      </header>
+      <div id="container" class="container">
+        <div class="image-container">
+          <img
+            class="image-before slider-image"
+            src="./assets/before.jpg"
+            alt="Before image"
+          />
+          <img
+            class="image-after slider-image"
+            src="./assets/after.jpg"
+            alt="After image"
+          />
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="slider"
+          aria-label="percentage of before image show"
+        />
+        <div class="slider-line"></div>
+        <div class="slider-button" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="90"
+            height="90"
+            fill="currentColor"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js" defer></script>
+  </body>
+</html>

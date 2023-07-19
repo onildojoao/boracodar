@@ -169,7 +169,7 @@
             <td align="center" ><a href="23"><img width="300px" src="./23/preview.jpg" /></a></td>
         </tr>
 
-</tr>
+<tr>
                 <td>24</td>
             <td><a href="24">Ajustes de Iluminação</a></td>
             <td>27/06/23</td>
@@ -179,7 +179,7 @@
             <td><a href="25">Player de VR</a></td>
             <td>28/06/23</td>
             <td align="center" ><a href="25"><img width="300px" src="./25/preview.jpg" /></a></td>
-        </tr>
+        <tr>
 <td>26</td>
             <td><a href="26">Receita Junina</a></td>
             <td>28/06/23</td>
@@ -190,11 +190,18 @@
             <td><a href="27">Página 404</a></td>
             <td>05/07/23</td>
             <td align="center" ><a href="27"><img width="300px" src="./27/preview.jpg" /></a></td>
-        </tr>
+        <tr>
 <td>28</td>
             <td><a href="28">Plataforma de IA</a></td>
-            <td>05/07/23</td>
+            <td>12/07/23</td>
             <td align="center" ><a href="28"><img width="300px" src="./28/preview.jpg" /></a></td>
+        </tr>
+
+<tr>
+<td>29</td>
+            <td><a href="29">Antes e Depois com IA</a></td>
+            <td>19/07/23</td>
+            <td align="center" ><a href="29"><img width="300px" src="./29/preview.jpg" /></a></td>
         </tr>
     </tbody>
 </table></p>
