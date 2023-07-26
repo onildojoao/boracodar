@@ -203,5 +203,10 @@
             <td>19/07/23</td>
             <td align="center" ><a href="29"><img width="300px" src="./29/preview.jpg" /></a></td>
         </tr>
+<td>30</td>
+            <td><a href="30">Gerador de Sugestões com IA</a></td>
+            <td>26/07/23</td>
+            <td align="center" ><a href="30"><img width="300px" src="./30/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
