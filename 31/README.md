@@ -1,4 +1,4 @@
-<h1 align="center"> Gerador de Sugestão com IA</h1>
+<h1 align="center"> Transcrição de vídeo com IA</h1>
 
 <p align="center">
 <a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
@@ -40,10 +40,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Promises
 - Acesso a APIs externas
 - Construção dinâmica do Layout
+- ES6 Modules
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1266028958590001589/). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1268564660141195165). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
