@@ -1,4 +1,4 @@
-<h1 align="center"> Transcrição de vídeo com IA</h1>
+<h1 align="center"> App de Tradução de SQL com IA</h1>
 
 <p align="center">
 <a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
@@ -25,27 +25,20 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
-- Phosphor Icons
+- Lucide Icons
 - Figma
-- Javascript
+- React
+- Tailwind Css
 
-## 🚀 Aspectos de CSS
+## 🚀 Aspectos de React
 
-- Display flex e grid
-- Responsividade (utilizando medida rem)
-- Phosphor Icons 
-
-## 🚀 Aspectos de JS
-
-- Promises
-- Acesso a APIs externas
+- Acesso a APIs da Open AI
 - Construção dinâmica do Layout
-- ES6 Modules
-- Acesso a APIS de download de vídeos do youtube, transformação do vídeo em áudio e IA para transcrição do áudio em vídeo
+
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1268564660141195165). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1271110680628406853). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 

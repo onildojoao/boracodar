@@ -213,5 +213,10 @@
             <td>09/08/23</td>
             <td align="center" ><a href="31"><img width="300px" src="./31/preview.jpg" /></a></td>
         </tr>
+<td>32</td>
+            <td><a href="32">App de Tradução de SQL com IA</a></td>
+            <td>16/08/23</td>
+            <td align="center" ><a href="32"><img width="300px" src="./32/asksql/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
