@@ -209,7 +209,7 @@
             <td align="center" ><a href="30"><img width="300px" src="./30/preview.jpg" /></a></td>
         </tr>
 <td>31</td>
-            <td><a href="31">Gerador de Sugestões com IA</a></td>
+            <td><a href="31">Transcrição de vídeo com IA</a></td>
             <td>09/08/23</td>
             <td align="center" ><a href="31"><img width="300px" src="./31/preview.jpg" /></a></td>
         </tr>
