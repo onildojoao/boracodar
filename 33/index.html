@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Gerador de Ticket</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="left">
+          <h1>gere seu ticket e compartilhe com o mundo</h1>
+          <form class="search">
+            <span>Digite seu usuário do GitHub</span>
+            <div class="input-wrapper">
+              <img src="./assets/logo.svg" alt="" />
+              <label for="search" class="sr-only">Nome de usuário</label>
+              <input
+                type="text"
+                placeholder="Nome de usuário"
+                id="search"
+                name="search"
+              />
+              <p class="error">Usuário inválido! Verifique o valor digitado.</p>
+            </div>
+            <button type="submit">Gere meu Ticket</button>
+          </form>
+        </div>
+        <div class="right">
+          <div class="card">
+            <img src="./assets/img-cover-ticket.png" alt="" class="cover" />
+            <div class="ticket">
+              <div class="avatar-div">
+                <img src="./assets/img-avatar.png" alt="" class="avatar" />
+                <h3>Tripulante</h3>
+                <span>Seu nome aqui</span>
+              </div>
+              <div class="details">
+                <div class="dl">
+                  <strong>Evento</strong>
+                  <strong>Data</strong>
+                  <strong>Hora</strong>
+                </div>
+                <div class="dr">
+                  <strong>IA para devs</strong>
+                  <strong>16 - 19 AGO. 2023</strong>
+                  <strong>Ao Vivo - 19H</strong>
+                </div>
+              </div>
+              <img src="./assets/barcode.svg" alt="" class="barcode" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

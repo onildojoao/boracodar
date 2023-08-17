@@ -218,5 +218,10 @@
             <td>16/08/23</td>
             <td align="center" ><a href="32"><img width="300px" src="./32/asksql/preview.jpg" /></a></td>
         </tr>
+<td>32</td>
+            <td><a href="33">Gerador de Ticket</a></td>
+            <td>16/08/23</td>
+            <td align="center" ><a href="33"><img width="300px" src="./33/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
