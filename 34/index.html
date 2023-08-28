@@ -10,92 +10,102 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
       defer
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <script src="./main.js" defer></script>
     <title>Lista de Compras</title>
   </head>
   <body>
-    <header>
-      <h1>Lista de Compras</h1>
+    <h1>Lista de Compras</h1>
+    <form>
       <div class="inputs">
         <div class="item-wrapper">
           <label class="" for="item">Item</label>
           <input type="text" name="item" id="item" class="item" />
         </div>
 
-        <div class="item-wrapper">
-          <label class="" for="number">Quantidade</label>
-          <div class="qtd-wrapper">
-            <input
-              type="number"
-              name="number"
-              id="number"
-              class="qtd"
-              value="1"
-            />
-            <select name="qtd" id="">
-              <option value="un">
-                UN. <img src="./assets/chevron.svg" alt="" />
-              </option>
-              <option value="l">
-                L <img src="./assets/chevron.svg" alt="" />
-              </option>
-              <option value="Kg">
-                kg <img src="./assets/chevron.svg" alt="" />
-              </option>
-            </select>
+        <div class="test">
+          <div class="item-wrapper">
+            <label class="" for="qtd">Quantidade</label>
+            <div class="qtd-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#AFABB6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-down"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+              <input type="number" name="qtd" id="qtd" class="qtd" value="1" />
+              <select class="unity" name="unity" id="unity">
+                <option class="option" value="unidade">UN.</option>
+                <option class="option" value="litro">L</option>
+                <option class="option" value="kilo">kg</option>
+              </select>
+            </div>
           </div>
+
+          <div class="item-wrapper">
+            <label class="" for="category">Categoria</label>
+            <div class="category-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#AFABB6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-down"
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+              <select name="category" id="category" class="category">
+                <option value="" class="empty">Selecione a categoria</option>
+                <option value="padaria">Padaria</option>
+                <option value="legume">Legume</option>
+                <option value="carne">Carne</option>
+                <option value="fruta">Fruta</option>
+                <option value="bebida">Bebida</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="addItem" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-plus"
+            >
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>
+          </button>
+
         </div>
 
-        <div class="item-wrapper">
-          <label class="" for="category">Categoria</label>
-          <select name="category" id="category" class="category">
-            <option value="" class="empty">Selecione a categoria</option>
-            <option value="Padaria">
-              Padaria <img src="./assets/chevron.svg" alt="" />
-            </option>
-            <option value="Legume">
-              Legume <img src="./assets/chevron.svg" alt="" />
-            </option>
-            <option value="Carne">
-              <i data-lucide-name="beef"></i>
-              Carne <img src="./assets/chevron.svg" alt="" />
-            </option>
-            <option value="Fruta">
-              Fruta <img src="./assets/chevron.svg" alt="" />
-            </option>
-            <option value="Bebida">
-              <img src="./assets/milk.svg" alt="" />
-              Bebida
-              <img src="./assets/chevron.svg" alt="" />
-            </option>
-          </select>
-        </div>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-plus"
-          >
-            <path d="M5 12h14" />
-            <path d="M12 5v14" />
-          </svg>
-        </button>
       </div>
-    </header>
+    </form>
     <main>
-      <div class="cards">
+      <!--   <div class="cards">
         <div class="left-wrap">
           <input type="checkbox" class="checkbox" />
           <div class="details">
@@ -125,23 +135,25 @@
             </svg>
             <span>fruta</span>
           </div>
-          <svg
-            class="more"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-more-vertical"
-          >
-            <circle cx="12" cy="12" r="1" />
-            <circle cx="12" cy="5" r="1" />
-            <circle cx="12" cy="19" r="1" />
-          </svg>
+          <button class="options">
+            <svg
+              class="more"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-more-vertical"
+            >
+              <circle cx="12" cy="12" r="1" />
+              <circle cx="12" cy="5" r="1" />
+              <circle cx="12" cy="19" r="1" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -195,7 +207,7 @@
             <circle cx="12" cy="19" r="1" />
           </svg>
         </div>
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
