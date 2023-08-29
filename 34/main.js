@@ -5,42 +5,22 @@ const itemCategory = document.querySelector(".category")
 const addItem = document.querySelector(".addItem")
 const form = document.querySelector("form")
 const main = document.querySelector("main")
-let listItems = []
-
-const colors = [
-  {
-    pink: "#DB5BBF",
-    pink_dark: "#251622",
-    orange: "#E07B67",
-    orange_dark: "#261A17",
-    yellow: "#BB9F3A",
-    yellow_dark: "#211E12",
-    green: "#8CAD51",
-    green_dark: "#1C2015",
-    blue: "#7B94CB",
-    blue_dark: "#1A1D23",
-  },
-]
 
 form.addEventListener("submit", createObject)
 
 function createObject(target) {
   target.preventDefault()
-  /* console.log(item.value, qtd.value, selectUnity.value, itemCategory.value) */
+
   let item = {
     itemName: inputItem.value,
     itemQtd: qtd.value,
     itemUnity: checkUnity(),
     itemCategory: itemCategory.value,
-    /*     itemCategoryColor: checkCategoryColor(),
-itemCategoryTextColor: checkCategoryTextColor(), */
+    itemSVG: checkSVG(),
   }
-  /* 
-  listItems.push(item)
 
-  for (i of listItems) {
-  } */
   main.innerHTML += createListItem(item)
+  updateTagColors()
   form.reset()
 }
 
@@ -49,12 +29,64 @@ function checkUnity() {
   else return selectUnity.value
 }
 
-function checkCategoryColor() {
-  /*   switch (itemCategory.value) {
-  
-case"padaria":
-return colors.
-} */
+function checkSVG() {
+  switch (itemCategory.value) {
+    case "fruta":
+      return "./assets/apple.svg"
+    case "padaria":
+      return "./assets/sandwich.svg"
+    case "legume":
+      return "./assets/carrot.svg"
+    case "bebida":
+      return "./assets/milk.svg"
+    case "carne":
+      return "./assets/beef.svg"
+  }
+}
+
+function checkCategoryTagColor(span) {
+  switch (span) {
+    case "fruta":
+      return "#261A17"
+    case "padaria":
+      return "#211E12"
+    case "legume":
+      return "#1C2015"
+    case "bebida":
+      return "#1A1D23"
+    case "carne":
+      return "#251622"
+  }
+}
+
+function checkCategoryTextColor(span) {
+  switch (span) {
+    case "fruta":
+      return "#E07B67"
+    case "padaria":
+      return "#BB9F3A"
+    case "legume":
+      return "#8CAD51"
+    case "bebida":
+      return "#7B94CB"
+    case "carne":
+      return "#DB5BBF"
+  }
+}
+
+function updateTagColors() {
+  const cards = main.querySelectorAll(".cards")
+
+  for (card of cards) {
+    let span = card.querySelector(".right-wrap span")
+    let tag = card.querySelector(".tag")
+
+    let tagColor = checkCategoryTagColor(span.textContent)
+    let textColor = checkCategoryTextColor(span.textContent)
+
+    tag.style.backgroundColor = tagColor
+    span.style.color = textColor
+  }
 }
 
 function createListItem(i) {
@@ -73,64 +105,31 @@ function createListItem(i) {
         <div class="right-wrap">
           <div class="tag">
           
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-sandwich"
-            >
-              <path d="M3 11v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3" />
-              <path
-                d="M12 19H4a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-3.83"
-              />
-              <path d="m3 11 7.77-6.04a2 2 0 0 1 2.46 0L21 11H3Z" />
-              <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z" />
-            </svg>
-            
+            <img src='${i.itemSVG}'>
             <span>${i.itemCategory}</span>
+
           </div>
           <button class="options">
-          <svg
-            class="more"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-more-vertical"
-          >
-            <circle cx="12" cy="12" r="1" />
-            <circle cx="12" cy="5" r="1" />
-            <circle cx="12" cy="19" r="1" />
-          </svg>
+          <img src='./assets/more.svg'>
+          
         </button>
         </div>
       </div>`
 }
 
 function disableItem(event) {
-  const card = event.currentTarget.parentElement.parentElement
-  console.log(card)
+  const card = event.currentTarget.parentElement.parentElement.parentElement
+
   const checked = card.querySelector(".checkbox-wrap svg")
-  console.log(checked)
+
   const h3 = card.querySelector("h3")
   if (event.currentTarget.checked == true) {
     checked.style.display = "block"
-    card.classList.add("active")
-    h3.classList.add("active")
+    card.classList.add("removed")
+    h3.classList.add("removed")
   } else {
     checked.style.display = "none"
-    card.classList.remove("active")
-    h3.classList.remove("active")
+    card.classList.remove("removed")
+    h3.classList.remove("removed")
   }
 }

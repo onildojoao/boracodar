@@ -37,9 +37,6 @@ select {
   text-transform: uppercase;
 }
 
-form {
-}
-
 h1 {
   margin-top: 10.5rem;
   color: #fbf9fe;
@@ -52,6 +49,13 @@ h1 {
 form .inputs {
   display: flex;
   gap: 1rem;
+}
+
+.inputs .test {
+  display: flex;
+  justify-content: space-between;
+
+  width: 38rem;
 }
 
 form .inputs .item-wrapper {
@@ -191,7 +195,7 @@ main {
   background: #17171a;
 }
 
-.cards.active {
+.cards.removed {
   background: #111112;
 }
 
@@ -282,17 +286,16 @@ main {
   gap: 0.5rem;
 
   border-radius: 62.4375rem;
-  background: #261a17;
+/*   background: #261a17; */
 }
 
-.right-wrap .tag svg {
-  width: 1rem;
-  height: 1rem;
-  stroke: #e07b67;
+.right-wrap .tag img {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .right-wrap .tag span {
-  color: #e07b67;
+/*   color: #e07b67; */
 
   font-weight: 600;
   line-height: 130%; /* 0.975rem */
@@ -303,12 +306,6 @@ main {
   background: transparent;
   border: none;
   cursor: pointer;
-}
-
-.right-wrap .more {
-  width: 2rem;
-  height: 2rem;
-  stroke: #a881e6;
 }
 
 @media (width<700px) {
