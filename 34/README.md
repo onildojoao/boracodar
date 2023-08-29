@@ -35,7 +35,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚀 Aspectos de JS
 
-- Promises
 - Construção dinâmica do Layout
 
 ## 🔖 Layout
