@@ -16,6 +16,7 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
+  background: #293144;
 }
 
 main {
@@ -100,6 +101,50 @@ header .score span {
   border-bottom: 6.387px solid var(--colors-base-grey-3, #252c3a);
   border-left: 3.194px solid var(--colors-base-grey-3, #252c3a);
   background: var(--colors-base-grey-4, #1d2330);
+
+  position: relative;
+}
+
+.card.correct {
+  border-top: 3.194px solid var(--colors-green-light, #abf770);
+  border-right: 3.194px solid var(--colors-green-light, #abf770);
+  border-bottom: 6.387px solid var(--colors-green-light, #abf770);
+  border-left: 3.194px solid var(--colors-green-light, #abf770);
+  background: var(--colors-base-grey-6, #161a24);
+}
+
+.card.incorrect {
+  border-top: 3.194px solid var(--colors-red-light, #f77070);
+  border-right: 3.194px solid var(--colors-red-light, #f77070);
+  border-bottom: 6.387px solid var(--colors-red-light, #f77070);
+  border-left: 3.194px solid var(--colors-red-light, #f77070);
+  background: var(--colors-base-grey-6, #161a24);
+}
+
+.card .feedback {
+  position: absolute;
+  background: transparent;
+  right: 0.8125rem;
+  top: 0.8125rem;
+  width: 2rem;
+  height: 2rem;
+
+  border-radius: 1.6875rem;
+  border: 3px solid var(--colors-base-grey-2, #565e6d);
+  cursor: pointer;
+}
+
+.card.correct .feedback {
+  background: var(--colors-red-light, #abf770);
+  border: 3px solid var(--colors-base-grey-2, #abf770);
+}
+
+.card.incorrect .feedback {
+  background: var(--colors-red-light, #ab3030);
+  border: 3px solid var(--colors-base-grey-2, #ab3030);
+}
+.hidden {
+  display: none;
 }
 
 .card p {
@@ -151,5 +196,5 @@ header .score span {
 .steps button svg {
   height: 2rem;
   width: 2rem;
-  stroke: #565e6D;
+  stroke: #565e6d;
 }
