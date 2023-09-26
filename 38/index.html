@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz de cards com Imagem</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./assets/👋 QuizTime.png" alt="" />
+        <div class="score">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 13L9 17L19 7"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span>3</span>
+        </div>
+      </header>
+
+      <div class="title">
+        <h1>Qual era o objetivo da personagem?</h1>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="check-awnser"></div>
+          <img src="./assets/IMG1.png" alt="" />
+          <p>Caçar tesouros</p>
+        </div>
+
+        <div class="card">
+          <div class="check-awnser"></div>
+          <img src="./assets/IMG2.png" alt="" />
+          <p>Ter mais tempo para ler livros</p>
+        </div>
+
+        <div class="card">
+          <div class="check-awnser"></div>
+          <img src="./assets/IMG3.png" alt="" />
+          <p>Navegar pelos 7 mares</p>
+        </div>
+      </div>
+
+      <div class="steps">
+        <span> <strong class="current-step">4</strong>/5</span>
+        <button>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 6L17 12L11 18"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <script type="module" src="/main.js" defer></script>
+  </body>
+</html>
