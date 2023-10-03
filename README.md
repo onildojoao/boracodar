@@ -234,5 +234,10 @@
             <td>26/09/23</td>
             <td align="center" ><a href="38"><img width="300px" src="./38/preview.jpg" /></a></td>
         </tr>
+<td>39</td>
+            <td><a href="39">Quiz de cards com Imagem</a></td>
+            <td>03/10/23</td>
+            <td align="center" ><a href="39"><img width="300px" src="./39/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>

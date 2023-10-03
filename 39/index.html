@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@phosphor-icons/webcomponents@2.0.5"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Avaliação de Produto</title>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="top">
+          <img src="./assets/watch.png" alt="" />
+        </div>
+        <div class="step1">
+          <div class="evaluate">
+            <div class="info">
+              <h3>Avalie o produto</h3>
+              <p>O que você achou do produto?</p>
+              <p><span>Smartchwatch Amazfit Bip U Pro</span>?</p>
+            </div>
+
+            <div class="review">
+              <div class="stars">
+                <ph-star
+                  :size="32"
+                  color="#E3E1E4"
+                  weight="fill"
+                  data-id="1"
+                  onclick="check(event)"
+                ></ph-star>
+                <ph-star
+                  :size="32"
+                  color="#E3E1E4"
+                  weight="fill"
+                  data-id="2"
+                  onclick="check(event)"
+                ></ph-star>
+                <ph-star
+                  :size="32"
+                  color="#E3E1E4"
+                  weight="fill"
+                  data-id="3"
+                  onclick="check(event)"
+                ></ph-star>
+                <ph-star
+                  :size="32"
+                  color="#E3E1E4"
+                  weight="fill"
+                  data-id="4"
+                  onclick="check(event)"
+                ></ph-star>
+                <ph-star
+                  :size="32"
+                  color="#E3E1E4"
+                  weight="fill"
+                  data-id="5"
+                  onclick="check(event)"
+                ></ph-star>
+              </div>
+              <div class="scale">
+                <p>Ruim</p>
+                <p>Ótimo</p>
+              </div>
+            </div>
+
+            <button class="confirm">
+              Confirmar
+              <ph-arrow-right
+                :size="32"
+                color="#fafafa"
+                weight="fill"
+              ></ph-arrow-right>
+            </button>
+          </div>
+        </div>
+
+        <div class="step2 hide">
+          <div class="feedback">
+            <div class="info">
+              <h3>Deixe um comentário</h3>
+              <p>Conte sobre o motivo da sua avaliação</p>
+            </div>
+
+            <div class="review">
+              <input
+                type="textarea"
+                placeholder="Escreva aqui seu comentário"
+                class="textarea"
+              />
+            </div>
+
+            <button class="send">
+              Enviar
+              <ph-arrow-right
+                :size="32"
+                color="#fafafa"
+                weight="fill"
+              ></ph-arrow-right>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
