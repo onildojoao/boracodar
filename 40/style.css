@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  width: 100vh;
+  padding: 10rem 0rem 5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background: #09090a;
+  position: relative;
+}
+
+.bg {
+  height: 80%;
+  position: absolute;
+  left: 90%;
+}
+.sr-only {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+section h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #996dff 0%, #c7afff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3rem; /* 100% */
+}
+
+section span {
+  width: 29rem;
+  color: #c4c4cc;
+
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem; /* 140% */
+}
+
+section .input-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  height: 3rem;
+}
+
+section .input-wrapper input {
+  display: flex;
+  width: 18rem;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+
+  border: none;
+  border-radius: 0.3125rem;
+  background: #202024;
+
+  color: #c4c4cc;
+  font-size: 0.8rem;
+  line-height: 160%; /* 1.6rem */
+}
+
+section .input-wrapper input:focus {
+  outline: 1px solid #996dff;
+}
+
+section .input-wrapper button {
+  all: unset;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, #996dff 0%, #c7afff 100%);
+
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contents {
+  padding-left: 45rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 17rem;
+}
+
+.card img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.card h2 {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem; /* 155.556% */
+}
+.card span {
+  color: #c4c4cc;
+  font-size: 0.875rem;
+  line-height: 1.25rem; /* 142.857% */
+}

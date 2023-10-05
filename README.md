@@ -239,5 +239,10 @@
             <td>03/10/23</td>
             <td align="center" ><a href="39"><img width="300px" src="./39/preview.jpg" /></a></td>
         </tr>
+<td>40</td>
+            <td><a href="40">Página de Newsletter</a></td>
+            <td>05/10/23</td>
+            <td align="center" ><a href="40"><img width="300px" src="./40/preview.jpg" /></a></td>
+        </tr>
     </tbody>
 </table></p>
